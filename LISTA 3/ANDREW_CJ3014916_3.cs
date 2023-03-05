@@ -140,10 +140,10 @@ namespace lista3_ANDREW_CJ3014916
             {
                 Console.WriteLine("LISTA 3 DE EXERCICIOS");
                 Console.WriteLine();
-                Console.WriteLine("01- EX01 ");
-                Console.WriteLine("02- EX02 ");
-                Console.WriteLine("03- EX03 ");
-                Console.WriteLine("04- EX04 ");
+                Console.WriteLine("01- MENOR, MAIOR, MEDIA ");
+                Console.WriteLine("02- MAIORES QUE A MEDIA ");
+                Console.WriteLine("03- MAIORES QUE A MEDIA RANDOMICAMENTE");
+                Console.WriteLine("04- JOGO DA VELHA");
                 Console.WriteLine("0 - Sair");
                 Console.Write("\nSelecione o numero do exercicio que deseja realizar: ");
                 opcao = int.Parse(Console.ReadLine());
