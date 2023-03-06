@@ -1,4 +1,5 @@
-Explique e exemplifique com códigos as seguintes propriedades ou métodos relacionados à strings:
+# Explique e exemplifique com códigos as seguintes propriedades ou métodos relacionados à strings:
+
 Legth
 ToCharArray
 Trim
