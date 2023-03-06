@@ -1,0 +1,22 @@
+Explique e exemplifique com códigos as seguintes propriedades ou métodos relacionados à strings:
+Legth
+ToCharArray
+Trim
+SubString
+Split
+Contains
+EndsWith
+Equals
+GetType
+IndexOf
+Empty
+Insert
+LastIndexOf
+Remove
+Replace
+StartsWith
+ToLower
+ToUpper
+ToString (ver a questão de como formatar datas, hora e representação de números diversos)
+string.IsNullOrEmpty
+string. (analisar quais outras operações podem ser aplicadas chamando diretamente a classe string).
