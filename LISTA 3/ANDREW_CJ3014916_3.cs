@@ -130,7 +130,166 @@ namespace lista3_ANDREW_CJ3014916
 
         public static void Exercicio4()
         {
-            /*MUITO DIFICIL*/
+                        /*!!pela dificuldade assisti uma video aula em linguagem C para aplicar neste exercicico
+            segue o link do video base: https://www.youtube.com/watch?v=WPVrj4CyCvM&t=728s*/
+
+            int l, c, linha, coluna, jogador, ganhou, jogadas, opcao;
+            char[,] jogo = new char[3, 3];
+
+            do
+            {
+                jogador = 1;
+                ganhou = 0;
+                jogadas = 0;
+
+                for (l = 0; l < 3; l++)
+                {
+                    for (c = 0; c < 3; c++)
+                    {
+                        jogo[l, c] = ' ';
+                    }
+                }
+
+                do
+                {
+                    Console.Clear();
+
+                    Console.WriteLine("\n\n\t 0   1   2\n\n");
+                    for (l = 0; l < 3; l++)
+                    {
+                        for (c = 0; c < 3; c++)
+                        {
+                            if (c == 0)
+                                Console.Write("\t");
+
+                            Console.Write(" {0} ", jogo[l, c]);
+
+                            if (c < 2)
+                                Console.Write("|");
+
+                            if (c == 2)
+                                Console.Write("  {0}", l);
+                        }
+
+                        if (l < 2)
+                            Console.WriteLine("\n\t-----------");
+
+                        Console.WriteLine();
+                    }
+
+                    do
+                    {
+                        Console.WriteLine("\nJOGADOR 1 = 0\nJOGADOR 2 = X\n");
+                        Console.WriteLine($"\nJOGADOR {jogador}: Escolha a linha de ENTER, escolha coluna e de ENTER: ");
+
+                        linha = int.Parse(Console.ReadLine());
+                        coluna = int.Parse(Console.ReadLine());
+                    }
+                    while (linha < 0 || linha > 2 || coluna < 0 || coluna > 2 || jogo[linha, coluna] != ' ');
+
+                    if (jogador == 1)
+                    {
+                        jogo[linha, coluna] = '0';
+                        jogador++;
+                    }
+                    else
+                    {
+                        jogo[linha, coluna] = 'X';
+                        jogador = 1;
+                    }
+
+                    jogadas++;
+
+                    if (jogo[0, 0] == '0' && jogo[0, 1] == '0' && jogo[0, 2] == '0' ||
+                        jogo[1, 0] == '0' && jogo[1, 1] == '0' && jogo[1, 2] == '0' ||
+                        jogo[2, 0] == '0' && jogo[2, 1] == '0' && jogo[2, 2] == '0')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 1 venceu por linha!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == 'X' && jogo[0, 1] == 'X' && jogo[0, 2] == 'X' ||
+                        jogo[1, 0] == 'X' && jogo[1, 1] == 'X' && jogo[1, 2] == 'X' ||
+                        jogo[2, 0] == 'X' && jogo[2, 1] == 'X' && jogo[2, 2] == 'X')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 2 venceu por linha!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == '0' && jogo[1, 0] == '0')
+
+                        // salvar coordenadas
+                        if (jogador == 1)
+                        {
+                            jogo[linha, coluna] = '0';
+                            jogador++;
+                        }
+                        else
+                        {
+                            jogo[linha, coluna] = 'X';
+                            jogador = 1;
+                        }
+                    jogadas++;
+
+                    // alguém ganhou por linha
+                    if (jogo[0, 0] == '0' && jogo[0, 1] == '0' && jogo[0, 2] == '0' ||
+                       jogo[1, 0] == '0' && jogo[1, 1] == '0' && jogo[1, 2] == '0' ||
+                       jogo[2, 0] == '0' && jogo[2, 1] == '0' && jogo[2, 2] == '0')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 1 venceu por linha!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == 'X' && jogo[0, 1] == 'X' && jogo[0, 2] == 'X' ||
+                       jogo[1, 0] == 'X' && jogo[1, 1] == 'X' && jogo[1, 2] == 'X' ||
+                       jogo[2, 0] == 'X' && jogo[2, 1] == 'X' && jogo[2, 2] == 'X')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 2 venceu por linha!\n");
+                        ganhou = 1;
+                    }
+
+                    // alguém ganhou por coluna
+                    if (jogo[0, 0] == '0' && jogo[1, 0] == '0' && jogo[2, 0] == '0' ||
+                    jogo[0, 1] == '0' && jogo[1, 1] == '0' && jogo[2, 1] == '0' ||
+                    jogo[0, 2] == '0' && jogo[1, 2] == '0' && jogo[2, 2] == '0')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 1 venceu por coluna!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == 'X' && jogo[1, 0] == 'X' && jogo[2, 0] == 'X' ||
+                        jogo[0, 1] == 'X' && jogo[1, 1] == 'X' && jogo[2, 1] == 'X' ||
+                        jogo[0, 2] == 'X' && jogo[1, 2] == 'X' && jogo[2, 2] == 'X')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 2 venceu por coluna!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == '0' && jogo[1, 1] == '0' && jogo[2, 2] == '0' ||
+                                   jogo[0, 2] == '0' && jogo[1, 1] == '0' && jogo[2, 0] == '0')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 1 venceu por diagonal!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogo[0, 0] == 'X' && jogo[1, 1] == 'X' && jogo[2, 2] == 'X' ||
+                        jogo[0, 2] == 'X' && jogo[1, 1] == 'X' && jogo[2, 0] == 'X')
+                    {
+                        Console.WriteLine("\nParabens! O jogador 2 venceu por diagonal!\n");
+                        ganhou = 1;
+                    }
+
+                    if (jogadas == 9 && ganhou == 0)
+                    {
+                        Console.WriteLine("\nEMPATE!\n");
+                    }
+
+                    Console.WriteLine("\nDeseja jogar novamente?\n1 - SIM\n0 - NAO");
+                    opcao = int.Parse(Console.ReadLine());
+                }
+                while (opcao == 1);
+            }
+            while (opcao != 0);
         }
 
         static void Main(string[] args)
