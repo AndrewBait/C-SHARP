@@ -87,7 +87,7 @@ namespace ConsoleApp1
                         Console.WriteLine("Sair");
                         break;
                     default:
-                        Console.WriteLine("OpÃ§Ã£o invÃ¡lida!");
+                        Console.WriteLine("Opcao invalida!");
                         break;
                 }
                 Console.WriteLine("Pressione qualquer tecla para continuar...");
