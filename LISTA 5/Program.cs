@@ -16,9 +16,7 @@ namespace ConsoleApp1
             Console.Clear();
             var maquina = Environment.MachineName;
             var data =  DateTime.Now;
-            int hora = data.Hour;
-            String UserName = Environment.UserName;
-            String UserName1 = System.Security.Principal.WindowsIdentity.GetCurrent().Name;            
+            int hora = data.Hour;                   
             
 
             if (hora >= 6 && hora < 12)
