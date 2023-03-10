@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -11,18 +11,34 @@ namespace ConsoleApp1
     {
         static void Exercicio1()
         {
-            //Console.WriteLine("Digite o nome do Usuário: ");
+            Console.WriteLine("Digite o nome do Usuário: ");
             var usuario = Console.ReadLine();
+            Console.Clear();
             var maquina = Environment.MachineName;
-            var data = DateTime.Now;
+            var data =  DateTime.Now;
+            int hora = data.Hour;
             String UserName = Environment.UserName;
-            String UserName1 = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            String UserName1 = System.Security.Principal.WindowsIdentity.GetCurrent().Name;            
+            
 
-            //Console.WriteLine(usuario);
-            Console.WriteLine($"Voce esta utillizando a maquina {maquina}");
-            Console.WriteLine(data);
-            Console.WriteLine(UserName);
-            Console.WriteLine(UserName1);
+            if (hora >= 6 && hora < 12)
+            {
+                Console.Write("Bom dia!");
+            }
+            else if (hora >= 12 && hora < 18)
+            {
+                Console.Write("Boa tarde!");
+            }
+            else
+            {
+                Console.Write("Boa noite!");
+            }
+
+            Console.WriteLine(usuario);
+            Console.WriteLine($"Voce esta utilizando a máquina {maquina}");
+            Console.Write("Hoje é ");
+            Console.WriteLine(data.ToString("F"));
+            
 
 
 
@@ -45,7 +61,7 @@ namespace ConsoleApp1
                 Console.WriteLine("01- EX01 ");
                 Console.WriteLine("02- EX02 ");
                 Console.WriteLine("03- EX03 ");
-                Console.WriteLine("04- EX04 "); 
+                Console.WriteLine("04- EX04 ");
                 Console.WriteLine("0 - Sair");
                 Console.Write("\nSelecione o numero do exercicio que deseja realizar: ");
                 opcao = int.Parse(Console.ReadLine());
@@ -56,15 +72,15 @@ namespace ConsoleApp1
                     case 1:
                         Exercicio1();
                         break;
-                   /* case 2:
-                        Exercicio2();
-                        break;
-                    case 3:
-                        Exercicio3();
-                        break;
-                    case 4:
-                        Exercicio4();
-                        break;*/
+                    /* case 2:
+                         Exercicio2();
+                         break;
+                     case 3:
+                         Exercicio3();
+                         break;
+                     case 4:
+                         Exercicio4();
+                         break;*/
                     case 0:
                         Console.WriteLine("Sair");
                         break;
@@ -76,7 +92,7 @@ namespace ConsoleApp1
                 Console.ReadKey();
                 Console.Clear();
             } while (opcao != 0);
-        
-    }
+
+        }
     }
 }
