@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ANDREW_LISTA5_CJ3014916
 {
 
     internal class Program
