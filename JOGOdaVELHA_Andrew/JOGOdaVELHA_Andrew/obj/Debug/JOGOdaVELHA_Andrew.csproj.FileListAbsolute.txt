@@ -1,0 +1,11 @@
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.csproj.SuggestedBindingRedirects.cache
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JogoDaVelha.Form1.resources
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.Properties.Resources.resources
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.csproj.GenerateResource.cache
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\bin\Debug\JOGOdaVELHA_Andrew.exe.config
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\bin\Debug\JOGOdaVELHA_Andrew.exe
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\bin\Debug\JOGOdaVELHA_Andrew.pdb
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.exe
+C:\Users\andre\source\repos\JOGOdaVELHA_Andrew\JOGOdaVELHA_Andrew\obj\Debug\JOGOdaVELHA_Andrew.pdb
